@@ -26,8 +26,8 @@ phases:
   build:
     on-failure: ABORT   
     commands: 
-      - cd "$CODEBUILD_SRC_DIR/terraform-manifests"
-      - ls -lrt "$CODEBUILD_SRC_DIR/terraform-manifests"
+      - cd "$CODEBUILD_SRC_DIR"
+      - ls -lrt "$CODEBUILD_SRC_DIR"
       - terraform --version
       - terraform init
       - terraform validate
